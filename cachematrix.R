@@ -2,7 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+#creates a matrix object that can cache its inverse
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
@@ -21,6 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+## checks if the given makeCacheMatrix object already has it's inverse calculate.
+## If not, it calculates it's inverse and caches it
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   inv <- x$getInverse()
